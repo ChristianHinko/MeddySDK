@@ -1,0 +1,38 @@
+{
+    "version": 10,
+    "cmakeMinimumRequired": {
+        "major": 4,
+        "minor": 0,
+        "patch": 0
+    },
+    "$comment": [
+        "Copyright (c) 2023-2025 Christian Hinkle, Brian Hinkle."
+    ],
+    "configurePresets": [
+        {
+            "name": "common-overrides-base",
+            "hidden": true,
+            "warnings": {
+                "uninitialized": true
+            }
+        },
+        {
+            "name": "debug-overrides-base",
+            "hidden": true
+        },
+        {
+            "name": "release-overrides-base",
+            "hidden": true
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "debug-overrides-base",
+            "hidden": true
+        },
+        {
+            "name": "release-overrides-base",
+            "hidden": true
+        }
+    ]
+}
